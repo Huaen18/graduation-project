@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>兰新高铁</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<section class="cloud"></section>
+		<section class="mountain">
+			<!--<div class="mountain-body"></div>-->
+		</section>
+		<section class="mountain">
+			<!--<div class="mountain-body"></div>-->
+		</section>
+		<section class="crh" >
+			<div class="crh-body">
+				<div class="door"></div>
+				<ul class="windows">
+					<li>/</li>
+					<li>/</li>
+					<li>/</li>
+					<li>/</li>
+				</ul>
+				<div class="crh-font"></div>
+				<ul class="crh-foot">
+					<li>/</li>
+					<li>/</li>
+				</ul>
+			</div>
+			<div class="crh-head">
+				<div class="crh-head-window1"></div>
+				<div class="crh-head-window2"></div>
+			</div>
+		</section>
+		
+		<section class="footer">
+			<section class="lanzhou">
+			<div class="lanzhou-top">第一站     兰州</div>
+			<div class="lanzhou-main"></div>
+		</section>
+		<section class="xining">
+			<div class="xining-top">第二站   西宁</div>
+			<div class="xining-main"></div>
+		</section>
+		<section class="zhangye">
+			<div class="zhangye-top">第三站    张掖</div>
+			<div class="zhangye-main"></div>
+		</section>
+		<section class="jiuquan">
+			<div class="jiuquan-top">第四站   酒泉</div>
+			<div class="jiuquan-main"></div>
+		</section>
+		<section class="jiayuguan">
+			<div class="jiayuguan-top">第五站   嘉峪关</div>
+			<div class="jiayuguan-main"></div>
+		</section>
+		<section class="hami">
+			<div class="hami-top">第六站   哈密</div>
+			<div class="hami-main"></div>
+		</section>
+		<section class="shanshan">
+			<div class="shanshan-top">第七站   鄯善</div>
+			<div class="shanshan-main"></div>
+		</section>
+		<section class="tulufan">
+			<div class="tulufan-top">第八站   吐鲁番</div>
+			<div class="tulufan-main"></div>
+		</section>
+		<section class="wulumuqi">
+			<div class="wulumuqi-top">第九站   乌鲁木齐</div>
+			<div class="wulumuqi-main"></div>
+		</section>
+			<ul class="clearfix"></ul>
+			<section class="tree">
+				<!--<div class="tree1"><div class="thetree1">	
+				<div class="thetreebg1"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+				</div></div>
+				<div class="tree2"><div class="thetree2">	
+				<div class="thetreebg2"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+				</div></div>
+				<div class="tree3"><div class="thetree3">	
+				<div class="thetreebg3"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+				</div></div>-->
+			</section>
+		</section>
+		<div class="scroll"></div>
+		<script src="js/js3.2.0min.js"></script>
+		<script>
+		function footerfun(){
+			var liWidth=90;
+			var footerHtmlA='<li><div class="footer-arrow"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="footer-skew"></div></li>';
+			var footerHtmlB='<li style="margin-right:200px;"><div class="footer-arrow"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="footer-skew"></div></li>';
+			var footerALL='';
+			var liHtml='';
+			var marginnum=0;
+			var inum=600;
+			for(var i=0;i<inum;i++)
+			{
+
+					liHtml=footerHtmlA;
+
+				footerALL=footerALL+liHtml;
+			}
+			var winwidth=$(document).width();/*可视区域的宽度*/
+			var winheight=$(document).height();/*可视区域的高度*/
+			$(".footer").css({width:liWidth*inum+"px"});
+			$('.scroll').css({height:(liWidth*inum-winwidth+winheight)+"px"});
+			$(".footer ul").append(footerALL);
+			var tree1html='<div class="tree1"><div class="thetree1"><div class="thetreebg1"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>';
+			var tree2html='<div class="tree2"><div class="thetree2"><div class="thetreebg2"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>';
+			var tree3html='<div class="tree3"><div class="thetree3"><div class="thetreebg3"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>';
+			$('.tree').append($(tree1html).css({left:"100px",top:"72px"}));
+			$('.tree').append($(tree2html).css({left:"200px",top:"72px"}));
+			$('.tree').append($(tree3html).css({left:"300px",top:"72px"}));
+			$('.tree').append($(tree2html).css({left:"1100px",top:"72px"}));
+			$('.tree').append($(tree3html).css({left:"2000px",top:"72px"}));
+			$('.tree').append($(tree2html).css({left:"2500px",top:"72px"}));
+			$('.tree').append($(tree1html).css({left:"4000px",top:"72px"}));
+			$('.tree').append($(tree2html).css({left:"4200px",top:"72px"}));
+			$('.tree').append($(tree3html).css({left:"4300px",top:"72px"}));
+			$('.tree').append($(tree1html).css({left:"100px",top:"72px"}));
+			$('.tree').append($(tree2html).css({left:"200px",top:"72px"}));
+			$('.tree').append($(tree3html).css({left:"300px",top:"72px"}));
+		}
+		footerfun();
+		$(window).scroll(function(){/*监听浏览器，浏览器滚动即触发*/
+			var scrollLong=$('html').scrollTop()+$('body').scrollTop();/*滚动得到距离*/
+		$(".footer").css({left:-scrollLong+"px"});/*地面向左滚动*/
+		$(".cloud").css({left:-scrollLong/50+"px"});
+		$(".mountain").css({left:-scrollLong/30+"px"});
+		});
+		function cloudfun(){
+		var cloudHtml='<div class="thecloud"style="left:100px;top:150px;"><i></i><i></i></div>';$('.cloud').append($(cloudHtml).css({left:"100px",top:"150px"}));
+	$('.cloud').append($(cloudHtml).css({left:"400px",top:"100px"}));
+	$('.cloud').append($(cloudHtml).css({left:"1200px",top:"150px"}));
+	$('.cloud').append($(cloudHtml).css({left:"2000px",top:"100px"}));
+	$('.cloud').append($(cloudHtml).css({left:"3400px",top:"150px"}));
+	$('.cloud').append($(cloudHtml).css({left:"3600px",top:"100px"}));
+	$('.cloud').append($(cloudHtml).css({left:"4000px",top:"75px"}));
+	$('.cloud').append($(cloudHtml).css({left:"9000px",top:"150px"}));
+	$('.cloud').append($(cloudHtml).css({left:"9120px",top:"100px"}));
+	$('.cloud').append($(cloudHtml).css({left:"9200px",top:"150px"}));
+	$('.cloud').append($(cloudHtml).css({left:"13000px",top:"150px"}));
+	$('.cloud').append($(cloudHtml).css({left:"13200px",top:"100px"}));
+	$('.cloud').append($(cloudHtml).css({left:"13300px",top:"150px"}));
+		}
+		cloudfun();
+		function mountainfun(){
+			var mountainHtml='<div class="mountain-body"></div>';$('.mountain').append($(mountainHtml).css({left:"1000px"}));
+$('.mountain').append($(mountainHtml).css({left:"2400px"}));
+$('.mountain').append($(mountainHtml).css({left:"4800px"}));}
+		mountainfun();
+		</script>
+	</body>
+</html>

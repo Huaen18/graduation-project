@@ -1,0 +1,179 @@
+body,ul,li{margin: 0;padding: 0;}
+li{list-style: none;}
+.clearfix{*zoom: 1;}
+.clearfix:after{content: "."; display: block; visibility: hidden; clear: both; height:0; font-size:0;}
+body{background: #00bff3;}
+/*云*/
+.cloud{position: fixed;left:0;top:0;}
+.thecloud{position:absolute;width:180px;height:72px;border-radius:40px;background: #fff;}
+.thecloud i{background: #fff;border-radius: 50%;position:absolute;}
+.thecloud i:nth-child(1){height:60px;width:60px;left:30px;top:-20px;}
+.thecloud i:nth-child(2){height:90px;width:90px;left:70px;top:-40px;}
+/*底部*/
+.footer{position: fixed;height:132px;left:0;bottom:0;}
+.footer li{float:left;height:132px;width:90px;background: #8dc63f;}
+.footer-arrow{height:5px;width:100%;padding-top: 45px;overflow: hidden;}
+.footer-arrow i{float: left;width:0;height:0;border-color: transparent transparent #a67c52;border-width:5px;margin-top:-5px;border-style: solid;}
+.footer-skew{width:100%;height:82px;background: #A67C52;}
+.footer-skew:before,.footer-skew:after{background: #8c6239;float:left;width:50%;height:50%;content: "";}
+.footer-skew:before{transform-origin: 100% 0;transform: skew(0,-30deg);}
+.footer-skew:after{transform-origin: 0 0;transform: skew(0,30deg);}
+/*山*/
+.mountain{left:0;bottom: 132px;position: fixed;}
+.mountain-body{width:800px;height:400px;position:absolute;left:0px;top:-400px;}
+.mountain-body:before{position:absolute;width:0;height:0;border-color:transparent #c69c6d #c69c6d transparent;border-width:200px;border-style: solid;content: "";bottom:0px;left:0;}
+.mountain-body:after{position:absolute;width:0;height:0;border-color:transparent transparent  #8c6239 #8c6239 ;border-width:200px;border-style: solid;content: "";bottom:0px;right:0;}
+/*动车*/
+.crh{width:300px;height:100px;position: fixed;bottom:111px;left:0;z-index: 200;}
+.crh-body{background: #fff;position: absolute;width:400px;height:200px;left:0;bottom:0;border-radius: 10px;
+}
+.door{height: 150px;width:100px;border-radius: 5px;position: absolute;left:70%;top:10%;border:#969696 solid 2px;z-index: 150;background: #FFFFFF;}
+.windows{position:absolute;left:0;top:20%;width:300px;height:50px;}
+.windows li{float:left;width:50px;height:60px;border-radius: 3px;background: #b7e9f7;margin:0 10px;color:#FFFFFF;text-align: center;}
+.crh-foot{position:absolute;width:150px;height:60px;left:89%;bottom:1px;background: #FFFFFF;border-radius: 40px;padding-left:50px;}
+.crh-foot li{float:left;width:50px;height:50px;border-radius: 50%;background: #969696;margin:20px 5px 0 5px;color:#fff;text-align: center;animation:crhfoot 1s linear infinite normal;}
+		@keyframes crhfoot{
+		0%{transform:rotate(0deg);}
+		100%{transform:rotate(360deg);}
+		}
+.crh-head{position:absolute;left:132%;bottom:60px;width:0;height:0;border-color:transparent transparent #fff #fff;border-width:70px;border-style: solid;}
+.crh-head-window1{width:0;height:0;border-color:transparent transparent #b7e9f7 #b7e9f7;border-width:20px;border-style: solid;margin:-20px -60px;}
+.crh-head-window2{width:20px;height:70px;transform: skew(45deg,0);background: #B7E9F7;margin-top: -35px;}
+.crh-font{position:absolute;left:0;bottom:0;width:150px;height:80px;background: url(../img/crh.jpg)no-repeat;}
+/*树*/
+.tree{position: absolute;bottom: 111px;width:350px;height:400px;}
+.tree1{position: absolute;left:40px;z-index: 18;top:72px;}
+.thetree1{width:200px;height:320px;background: #8dc63f;border-radius: 75px;position: absolute;top:-102px;}
+.thetreebg1{width:100%;height:70px;bottom:0px;position: absolute;background: #8DC63F;}
+.thetreebg1 i{background: #8DC63F;height:20px;width:20px;border-radius: 50%;position: absolute;}
+.thetreebg1 i:nth-child(1){left:0;bottom:-10px;}
+.thetreebg1 i:nth-child(2){left:20px;bottom:-10px;}
+.thetreebg1 i:nth-child(3){left:40px;bottom:-10px;}
+.thetreebg1 i:nth-child(4){left:60px;bottom:-10px;}
+.thetreebg1 i:nth-child(5){left:80px;bottom:-10px;}
+.thetreebg1 i:nth-child(6){left:100px;bottom:-10px;}
+.thetreebg1 i:nth-child(7){right:80px;bottom:-10px;}
+.thetreebg1 i:nth-child(8){right:60px;bottom:-10px;}
+.thetreebg1 i:nth-child(9){right:40px;bottom:-10px;}
+.thetreebg1 i:nth-child(10){right:20px;bottom:-10px;}
+.thetreebg1 i:nth-child(11){right:0px;bottom:-10px;}
+.thetree1:before{content: "";position: absolute;height:108px;width:40px;background: #a67c52;bottom:-110px;left:80px;}
+.tree2{position: absolute;left:240px;z-index: 8;top:72px;}
+.thetree2{width:140px;height:130px;background: #39b54a;border-radius: 75px;position: absolute;top:140px;}
+.thetreebg2{width:100%;height:70px;bottom:0px;position: absolute;background: #39b54a;}
+.thetreebg2 i{background: #39b54a;height:20px;width:20px;border-radius: 50%;position: absolute;}
+.thetreebg2 i:nth-child(1){left:0;bottom:-10px;}
+.thetreebg2 i:nth-child(2){left:20px;bottom:-10px;}
+.thetreebg2 i:nth-child(3){left:40px;bottom:-10px;}
+.thetreebg2 i:nth-child(4){left:60px;bottom:-10px;}
+.thetreebg2 i:nth-child(5){left:80px;bottom:-10px;}
+.thetreebg2 i:nth-child(6){left:100px;bottom:-10px;}
+.thetreebg2 i:nth-child(7){right:80px;bottom:-10px;}
+.thetreebg2 i:nth-child(8){right:60px;bottom:-10px;}
+.thetreebg2 i:nth-child(9){right:40px;bottom:-10px;}
+.thetreebg2 i:nth-child(10){right:20px;bottom:-10px;}
+.thetreebg2 i:nth-child(11){right:0px;bottom:-10px;}
+.thetree2:before{content: "";position: absolute;height:54px;width:30px;background: #a67c52;bottom:-58px;left:50px;}
+.tree3{position: absolute;left:140px;z-index: 1;top:72px;}
+.thetree3{width:180px;height:220px;background: #187525;border-radius: 75px;position: absolute;top:90px;}
+.thetreebg3{width:100%;height:70px;bottom:0px;position: absolute;background: #187525;}
+.thetreebg3 i{background: #187525;height:20px;width:20px;border-radius: 50%;position: absolute;}
+.thetreebg3 i:nth-child(1){left:0;bottom:-10px;}
+.thetreebg3 i:nth-child(2){left:20px;bottom:-10px;}
+.thetreebg3 i:nth-child(3){left:40px;bottom:-10px;}
+.thetreebg3 i:nth-child(4){left:60px;bottom:-10px;}
+.thetreebg3 i:nth-child(5){left:80px;bottom:-10px;}
+.thetreebg3 i:nth-child(6){left:100px;bottom:-10px;}
+.thetreebg3 i:nth-child(7){right:80px;bottom:-10px;}
+.thetreebg3 i:nth-child(8){right:60px;bottom:-10px;}
+.thetreebg3 i:nth-child(9){right:40px;bottom:-10px;}
+.thetreebg3 i:nth-child(10){right:20px;bottom:-10px;}
+.thetreebg3 i:nth-child(11){right:0px;bottom:-10px;}
+.thetree3:before{content: "";position: absolute;height:20px;width:50px;background: #a67c52;bottom:-18px;left:50px;}
+/*兰州*/
+.lanzhou{width:1000px;height:500px;position: absolute;left:700px;bottom:130px;z-index: 199;}
+.lanzhou-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
+.lanzhou-main{width:100%;height:400px;position:absolute;left:0;bottom:100px;animation: lzphoto 15s linear infinite alternate;}
+@keyframes lzphoto{
+		0%{float:left;width:450px;height:300px;background: url(../img/1.jpg))no-repeat;}
+		30%{float:left;width:370px;height:255px;background: url(../img/3.jpg)no-repeat;}
+		60%{float:left;width:400px;height:300px;background: url(../img/4.jpg)no-repeat;}
+		100%{float:left;width:220px;height:159px;background: url(../img/2.jpg)no-repeat;}
+		}
+/*西宁*/
+.xining{width:1000px;height:500px;position: absolute;left:4000px;bottom:130px;z-index: 199;}
+.xining-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
+.xining-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: xnphoto 8s linear infinite alternate;}
+@keyframes xnphoto{
+		0%{float:left;width:210px;height:150px;background: url(../img/5.jpg))no-repeat;}
+		30%{float:left;width:200px;height:200px;background: url(../img/6.jpg)no-repeat;}
+		60%{float:left;width:228px;height:127px;background: url(../img/7.jpg)no-repeat;}
+		100%{float:left;width:187px;height:155px;background: url(../img/8.jpg)no-repeat;}
+		}
+/*张掖*/
+.zhangye{width:1000px;height:500px;position: absolute;left:8000px;bottom:130px;z-index: 199;}
+.zhangye-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
+.zhangye-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: zyphoto 8s linear infinite alternate;}
+@keyframes zyphoto{
+		0%{float:left;width:220px;height:150px;background: url(../img/9.jpg))no-repeat;}
+		30%{float:left;width:200px;height:133px;background: url(../img/10.jpg)no-repeat;}
+		60%{float:left;width:225px;height:150px;background: url(../img/11.jpg)no-repeat;}
+		100%{float:left;width:225px;height:150px;background: url(../img/12.jpg)no-repeat;}
+		}
+/*酒泉*/
+.jiuquan{width:1000px;height:500px;position: absolute;left:12000px;bottom:130px;z-index: 199;}
+.jiuquan-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
+.jiuquan-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: jqphoto 8s linear infinite alternate;text-align: center;}
+@keyframes jqphoto{
+		0%{float:left;width:200px;height:150px;background: url(../img/13.jpg))no-repeat;}
+		30%{float:left;width:228px;height:152px;background: url(../img/14.jpg)no-repeat;}
+		60%{float:left;width:210px;height:139px;background: url(../img/15.jpg)no-repeat;}
+		100%{float:left;width:250px;height:141px;background: url(../img/16.jpg)no-repeat;}
+		}
+/*嘉峪关*/
+.jiayuguan{width:1000px;height:500px;position: absolute;left:16000px;bottom:130px;z-index: 199;}
+.jiayuguan-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
+.jiayuguan-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: jygphoto 8s linear infinite alternate;}
+@keyframes jygphoto{
+		0%{float:left;width:208px;height:156px;background: url(../img/17.jpg))no-repeat;}
+		30%{float:left;width:200px;height:140px;background: url(../img/18.jpg)no-repeat;}
+		60%{float:left;width:250px;height:160px;background: url(../img/19.jpg)no-repeat;}
+		100%{float:left;width:249px;height:156px;background: url(../img/20.jpg)no-repeat;}
+		}
+/*哈密*/
+.hami{width:1000px;height:500px;position: absolute;left:20000px;bottom:130px;z-index: 199;}
+.hami-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
+.hami-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: hmphoto 8s linear infinite alternate;}
+@keyframes hmphoto{
+		0%{float:left;width:220px;height:140px;background: url(../img/21.jpg))no-repeat;}
+		30%{float:left;width:210px;height:150px;background: url(../img/22.jpg)no-repeat;}
+		60%{float:left;width:170px;height:120px;background: url(../img/23.jpg)no-repeat;}
+		100%{float:left;width:266px;height:148px;background: url(../img/24.jpg)no-repeat;}
+		}
+/*鄯善*/
+.shanshan{width:1000px;height:500px;position: absolute;left:26000px;bottom:130px;z-index: 199;}
+.shanshan-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
+.shanshan-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: ssphoto 8s linear infinite alternate;}
+@keyframes ssphoto{
+		0%{float:left;width:220px;height:140px;background: url(../img/25.jpg))no-repeat;}
+		50%{float:left;width:210px;height:150px;background: url(../img/26.jpg)no-repeat;}
+		100%{float:left;width:170px;height:120px;background: url(../img/27.jpg)no-repeat;}
+		}
+/*吐鲁番*/
+.tulufan{width:1000px;height:500px;position: absolute;left:33000px;bottom:130px;z-index: 199;}
+.tulufan-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
+.tulufan-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: tlfphoto 8s linear infinite alternate;}
+@keyframes tlfphoto{
+		0%{float:left;width:220px;height:140px;background: url(../img/28.jpg))no-repeat;}
+		50%{float:left;width:210px;height:150px;background: url(../img/29.jpg)no-repeat;}
+		100%{float:left;width:170px;height:120px;background: url(../img/30.jpg)no-repeat;}
+		}
+/*乌鲁木齐*/
+.wulumuqi{width:1000px;height:500px;position: absolute;left:40000px;bottom:130px;z-index: 199;}
+.wulumuqi-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
+.wulumuqi-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: wlmqphoto 8s linear infinite alternate;}
+@keyframes wlmqphoto{
+		0%{float:left;width:220px;height:140px;background: url(../img/31.jpg))no-repeat;}
+		50%{float:left;width:210px;height:150px;background: url(../img/32.jpg)no-repeat;}
+		100%{float:left;width:170px;height:120px;background: url(../img/33.jpg)no-repeat;}
+		}
