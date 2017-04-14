@@ -1,4 +1,4 @@
-body,ul,li{margin: 0;padding: 0;}
+body,ul,li,section,div{margin: 0;padding: 0;}
 li{list-style: none;}
 .clearfix{*zoom: 1;}
 .clearfix:after{content: "."; display: block; visibility: hidden; clear: both; height:0; font-size:0;}
@@ -24,7 +24,7 @@ body{background: #00bff3;}
 .mountain-body:before{position:absolute;width:0;height:0;border-color:transparent #c69c6d #c69c6d transparent;border-width:200px;border-style: solid;content: "";bottom:0px;left:0;}
 .mountain-body:after{position:absolute;width:0;height:0;border-color:transparent transparent  #8c6239 #8c6239 ;border-width:200px;border-style: solid;content: "";bottom:0px;right:0;}
 /*动车*/
-.crh{width:300px;height:100px;position: fixed;bottom:111px;left:0;z-index: 200;}
+.crh{transform:scale(0.7,0.7);width:300px;height:100px;position: fixed;bottom:94px;left:-45px;z-index: 200;}
 .crh-body{background: #fff;position: absolute;width:400px;height:200px;left:0;bottom:0;border-radius: 10px;
 }
 .door{height: 150px;width:100px;border-radius: 5px;position: absolute;left:70%;top:10%;border:#969696 solid 2px;z-index: 150;background: #FFFFFF;}
@@ -93,35 +93,42 @@ body{background: #00bff3;}
 /*兰州*/
 .lanzhou{width:1000px;height:500px;position: absolute;left:700px;bottom:130px;z-index: 199;}
 .lanzhou-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
-.lanzhou-main{width:100%;height:400px;position:absolute;left:0;bottom:100px;animation: lzphoto 15s linear infinite alternate;}
+/*.lanzhou-main{width:100%;height:400px;position:absolute;left:0;bottom:100px;animation: lzphoto 15s linear infinite alternate;}
 @keyframes lzphoto{
-		0%{float:left;width:450px;height:300px;background: url(../img/1.jpg))no-repeat;}
+		0%{float:left;width:450px;height:300px;background: url(../img/1.jpg)no-repeat;}
 		30%{float:left;width:370px;height:255px;background: url(../img/3.jpg)no-repeat;}
 		60%{float:left;width:400px;height:300px;background: url(../img/4.jpg)no-repeat;}
 		100%{float:left;width:220px;height:159px;background: url(../img/2.jpg)no-repeat;}
+		}*/
+.lanzhou-main{position: absolute;top:0;right:0;width:100%;height: 100%;}
+.lanzhou-btn{background: url(../img/house.png)no-repeat;width:800px;height:640px;position: absolute;left: 200px;top:-200px;animation: lzphoto 3s ease-in 1 normal;animation-fill-mode: forwards;}
+@keyframes lzphoto{
+		0%{top:-200px;}
+		100%{top:400px;}
 		}
 /*西宁*/
-.xining{width:1000px;height:500px;position: absolute;left:4000px;bottom:130px;z-index: 199;}
+.xining{width:1000px;height:500px;position: absolute;left:6700px;bottom:130px;z-index: 199;}
 .xining-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
-.xining-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: xnphoto 8s linear infinite alternate;}
+.xining-main{width:100%;height:400px;position:absolute;left:0;bottom:180px;animation: xnphoto 8s linear infinite alternate;}
 @keyframes xnphoto{
 		0%{float:left;width:210px;height:150px;background: url(../img/5.jpg))no-repeat;}
 		30%{float:left;width:200px;height:200px;background: url(../img/6.jpg)no-repeat;}
 		60%{float:left;width:228px;height:127px;background: url(../img/7.jpg)no-repeat;}
 		100%{float:left;width:187px;height:155px;background: url(../img/8.jpg)no-repeat;}
 		}
+.xining-body{position:absolute;width:500px;height:200px;font-family: "微软雅黑";font-size:18px;line-height: 18px;right:0;top:0;}
 /*张掖*/
-.zhangye{width:1000px;height:500px;position: absolute;left:8000px;bottom:130px;z-index: 199;}
+.zhangye{width:1000px;height:500px;position: absolute;left:12700px;bottom:130px;z-index: 199;}
 .zhangye-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
-.zhangye-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: zyphoto 8s linear infinite alternate;}
-@keyframes zyphoto{
+.zhangye-main{width:100%;height:400px;position:absolute;left:0;bottom:-190px;background: url(../img/horse.png)no-repeat;/*animation: zyphoto 8s linear infinite alternate;*/}
+/*@keyframes zyphoto{
 		0%{float:left;width:220px;height:150px;background: url(../img/9.jpg))no-repeat;}
 		30%{float:left;width:200px;height:133px;background: url(../img/10.jpg)no-repeat;}
 		60%{float:left;width:225px;height:150px;background: url(../img/11.jpg)no-repeat;}
 		100%{float:left;width:225px;height:150px;background: url(../img/12.jpg)no-repeat;}
-		}
+		}*/
 /*酒泉*/
-.jiuquan{width:1000px;height:500px;position: absolute;left:12000px;bottom:130px;z-index: 199;}
+.jiuquan{width:1000px;height:500px;position: absolute;left:18700px;bottom:130px;z-index: 199;}
 .jiuquan-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
 .jiuquan-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: jqphoto 8s linear infinite alternate;text-align: center;}
 @keyframes jqphoto{
@@ -131,7 +138,7 @@ body{background: #00bff3;}
 		100%{float:left;width:250px;height:141px;background: url(../img/16.jpg)no-repeat;}
 		}
 /*嘉峪关*/
-.jiayuguan{width:1000px;height:500px;position: absolute;left:16000px;bottom:130px;z-index: 199;}
+.jiayuguan{width:1000px;height:500px;position: absolute;left:24700px;bottom:130px;z-index: 199;}
 .jiayuguan-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
 .jiayuguan-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: jygphoto 8s linear infinite alternate;}
 @keyframes jygphoto{
@@ -141,7 +148,7 @@ body{background: #00bff3;}
 		100%{float:left;width:249px;height:156px;background: url(../img/20.jpg)no-repeat;}
 		}
 /*哈密*/
-.hami{width:1000px;height:500px;position: absolute;left:20000px;bottom:130px;z-index: 199;}
+.hami{width:1000px;height:500px;position: absolute;left:30000px;bottom:130px;z-index: 199;}
 .hami-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
 .hami-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: hmphoto 8s linear infinite alternate;}
 @keyframes hmphoto{
@@ -151,7 +158,7 @@ body{background: #00bff3;}
 		100%{float:left;width:266px;height:148px;background: url(../img/24.jpg)no-repeat;}
 		}
 /*鄯善*/
-.shanshan{width:1000px;height:500px;position: absolute;left:26000px;bottom:130px;z-index: 199;}
+.shanshan{width:1000px;height:500px;position: absolute;left:37000px;bottom:130px;z-index: 199;}
 .shanshan-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
 .shanshan-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: ssphoto 8s linear infinite alternate;}
 @keyframes ssphoto{
@@ -160,7 +167,7 @@ body{background: #00bff3;}
 		100%{float:left;width:170px;height:120px;background: url(../img/27.jpg)no-repeat;}
 		}
 /*吐鲁番*/
-.tulufan{width:1000px;height:500px;position: absolute;left:33000px;bottom:130px;z-index: 199;}
+.tulufan{width:1000px;height:500px;position: absolute;left:46000px;bottom:130px;z-index: 199;}
 .tulufan-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
 .tulufan-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: tlfphoto 8s linear infinite alternate;}
 @keyframes tlfphoto{
@@ -169,7 +176,7 @@ body{background: #00bff3;}
 		100%{float:left;width:170px;height:120px;background: url(../img/30.jpg)no-repeat;}
 		}
 /*乌鲁木齐*/
-.wulumuqi{width:1000px;height:500px;position: absolute;left:40000px;bottom:130px;z-index: 199;}
+.wulumuqi{width:1000px;height:500px;position: absolute;left:53000px;bottom:130px;z-index: 199;}
 .wulumuqi-top{position:absolute;left:0;top:0;width:200px;height:30px;color:#f9a55a;font-family: "微软雅黑";font-size: 27px;line-height: 30px;background: #0a6afb;text-align: center;}
 .wulumuqi-main{width:100%;height:400px;position:absolute;left:0;bottom:0;animation: wlmqphoto 8s linear infinite alternate;}
 @keyframes wlmqphoto{
