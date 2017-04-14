@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<meta charset="utf-8" />
 		<title>兰新高铁</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
+		<video id="video1">
+  <source src="img/Summer.mp3" type="video/mp3">
+  <source src="img/Summer_new.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
 		<section class="cloud"></section>
-		<section class="mountain">
-			<!--<div class="mountain-body"></div>-->
-		</section>
 		<section class="mountain">
 			<!--<div class="mountain-body"></div>-->
 		</section>
@@ -37,40 +40,43 @@
 		<section class="footer">
 			<section class="lanzhou">
 			<div class="lanzhou-top">第一站     兰州</div>
-			<div class="lanzhou-main"></div>
-		</section>
-		<section class="xining">
+			<div class="lanzhou-main">
+				<div class="lanzhou-btn">点击房子</div>
+			</div>
+			</section>
+			<section class="xining">
 			<div class="xining-top">第二站   西宁</div>
 			<div class="xining-main"></div>
-		</section>
-		<section class="zhangye">
+			<div class="xining-body">1西宁位于青海省东部，湟水中游河谷盆地，是青藏高原的东方门户，古“丝绸之路”南路和“唐蕃古道”的必经之地，自古就是西北交通要道和军事重地，素有”西海锁钥“、“海藏咽喉”之称，是世界高海拔城市之一。</br>2西宁历史文化渊源流长，得天独厚的自然资源，绚丽多彩的民俗风情，是青藏高原一颗璀璨的明珠。先后荣获全国卫生城市、中国特色魅力城市200强、全国优秀旅游城市、全国园林绿化先进城市、国家森林城市等荣誉称号。</div>
+			</section>
+			<section class="zhangye">
 			<div class="zhangye-top">第三站    张掖</div>
 			<div class="zhangye-main"></div>
-		</section>
-		<section class="jiuquan">
+			</section>
+			<section class="jiuquan">
 			<div class="jiuquan-top">第四站   酒泉</div>
 			<div class="jiuquan-main"></div>
-		</section>
-		<section class="jiayuguan">
+			</section>
+			<section class="jiayuguan">
 			<div class="jiayuguan-top">第五站   嘉峪关</div>
 			<div class="jiayuguan-main"></div>
-		</section>
-		<section class="hami">
+			</section>
+			<section class="hami">
 			<div class="hami-top">第六站   哈密</div>
 			<div class="hami-main"></div>
-		</section>
-		<section class="shanshan">
+			</section>
+			<section class="shanshan">
 			<div class="shanshan-top">第七站   鄯善</div>
 			<div class="shanshan-main"></div>
-		</section>
-		<section class="tulufan">
+			</section>
+			<section class="tulufan">
 			<div class="tulufan-top">第八站   吐鲁番</div>
 			<div class="tulufan-main"></div>
-		</section>
-		<section class="wulumuqi">
+			</section>
+			<section class="wulumuqi">
 			<div class="wulumuqi-top">第九站   乌鲁木齐</div>
 			<div class="wulumuqi-main"></div>
-		</section>
+			</section>
 			<ul class="clearfix"></ul>
 			<section class="tree">
 				<!--<div class="tree1"><div class="thetree1">	
@@ -122,9 +128,16 @@
 			$('.tree').append($(tree1html).css({left:"100px",top:"72px"}));
 			$('.tree').append($(tree2html).css({left:"200px",top:"72px"}));
 			$('.tree').append($(tree3html).css({left:"300px",top:"72px"}));
+		
 		}
 		footerfun();
+		var myVideo=document.getElementById("video1");
+		var btnLZNode=document.querySelector(".lanzhou-btn");
+		btnLZNode.onclick=function(){
+			$('.lanzhou-btn').css({background:"url(img/lz-food.png) no-repeat",animation:"none",top:"-100px",transform:"scale(0.5,0.5)"});
+		}
 		$(window).scroll(function(){/*监听浏览器，浏览器滚动即触发*/
+			myVideo.play();
 			var scrollLong=$('html').scrollTop()+$('body').scrollTop();/*滚动得到距离*/
 		$(".footer").css({left:-scrollLong+"px"});/*地面向左滚动*/
 		$(".cloud").css({left:-scrollLong/50+"px"});
@@ -148,9 +161,10 @@
 		cloudfun();
 		function mountainfun(){
 			var mountainHtml='<div class="mountain-body"></div>';$('.mountain').append($(mountainHtml).css({left:"1000px"}));
-$('.mountain').append($(mountainHtml).css({left:"2400px"}));
 $('.mountain').append($(mountainHtml).css({left:"4800px"}));}
 		mountainfun();
+		
+	
 		</script>
 	</body>
 </html>
